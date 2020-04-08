@@ -1,0 +1,369 @@
+<？xml 版本 = “ 1.0 ”编码 = “ utf-8 ”？>
+< FDL >
+	<！- Rev1- >	
+	<！- jokinawa- >
+	< cafd  id = “ 000051C9 ” 名称 = “ IHKA4 ” 作者 = “ jokinawa ” 系列 = “ S18A ” >
+		<！-组3000- >
+		< 代码 说明 = “ [1/2]启用更冷的空调” >
+			< 组 ID = “ 3000 ” >
+				< function  start = “ 11 ”  end = “ 11 ”  comment = “ LAENDERVARIENTE ”  mask = “ 00000111b ” > 02 </ function >
+			</ group >
+		</ 代码 >
+		< 代码 说明 = “ [2/2]启用更冷的空调” >
+			< 组 ID = “ 3003 ” >
+				< 函数 开始 = “ 1 ” 结束 = “ 1 ” 注释 = “ TEMPERATUR_OFFSET ”  mask = “ 00001111b ” > 06 </ 函数 >
+			</ group >
+		</ 代码 >
+		
+	</ cafd >
+	< cafd  id = “ 000044ED ” 名称 = “ BDC_BODY3 ” 作者 = “ jokinawa ” 系列 = “ S18A ” >
+		<！-组3510 PwFunction- >
+		< 代码 说明 = “通过钥匙扣允许关闭窗户和天窗” >
+			< 组 ID = “ 3510 ” >
+				< function  start = “ 11 ”  end = “ 11 ”  comment = “ FH_KOMFORTSCHLIESSUNG_FB ”  mask = “ 00100000b ” > aktiv </ function >
+			</ group >
+		</ 代码 >
+		< 代码 描述 = “在打开门时禁用前窗汇总停止” >
+			< 组 ID = “ 3510 ” >
+				< 函数 开始 = “ 0 ” 结束 = “ 0 ” 注释 = “ FH_TUERAUF_STOP_MAUT ”  mask = “ 00000001b ” > nicht_aktiv </ 函数 >
+			</ group >
+		</ 代码 >
+	</ cafd >
+	< cafd  id = “ 00007083 ” 名称 = “ BDC_BODY3 ” 作者 = “ jokinawa ” 系列 = “ S18A ” >
+		
+		<！- 3075 LceMaster- >
+		< 代码 说明 = “警报时雾灯闪烁-同时[US默认] ” >
+			< 组 ID = “ 3075 ” >
+				< function  start = “ 4 ”  end = “ 4 ”  comment = “ FERNLICHTBLINKEN_UEBERFALLALARM_BLINKMODUS ”  mask = “ 10000000b ” > gleichzeitig </ function >
+			</ group >
+		</ 代码 >
+		< 代码 说明 = “警报时雾灯闪烁-交替[欧洲默认设置] ” >
+			< 组 ID = “ 3075 ” >
+				< 函数 开始 = “ 4 ” 结束 = “ 4 ” 注释 = “ FERNLICHTBLINKEN_UEBERFALLALARM_BLINKMODUS ”  mask = “ 10000000b ” > abwechseln </ 函数 >
+			</ group >
+		</ 代码 >
+		< 代码 说明 = “紧急制动力显示-关闭[美国默认] ” >
+			< 组 ID = “ 3075 ” >
+				< function  start = “ 1 ”  end = “ 1 ”  comment = “ GEFAHRENBREMSLICHT_TYP ”  mask = “ 01100000b ” > nicht_aktiv </ function >
+			</ group >
+		</ 代码 >
+		< 代码 说明 = “紧急制动力显示-闪烁[欧洲默认设置] ” >
+			< 组 ID = “ 3075 ” >
+				< 函数 开始 = “ 1 ” 结束 = “ 1 ” 注释 = “ GEFAHRENBREMSLICHT_TYP ” 掩码 = “ 01100000b ” > bremslicht_blinkend </ 函数 >
+			</ group >
+		</ 代码 >
+		< 代码 描述 = “紧急制动力显示-区域放大” >
+			< 组 ID = “ 3075 ” >
+				< function  start = “ 1 ”  end = “ 1 ”  comment = “ GEFAHRENBREMSLICHT_TYP ”  mask = “ 01100000b ” > flaechenvergroesserung </ function >
+			</ group >
+		</ 代码 >
+		<！- 3040 VaMaster- >
+		< 代码 说明 = “在发动机运行时锁定车门时禁用喇叭声” >
+			< 组 ID = “ 3040 ” >
+				< function  start = “ 1 ”  end = “ 1 ”  comment = “ VAM_HORN_AT_SECURE ”  mask = “ 00000010b ” > nicht_aktiv </ function >
+			</ group >
+		</ 代码 >
+		<！-组3221 PfFesMaster- >
+		< 代码 说明 = “镜面倾斜角90 [默认] ” >
+			< 组 ID = “ 3110 ” >
+				< 函数 开始 = “ 1 ” 结束 = “ 1 ” 注释 = “ ASP_BORDSTEINAUTOMATIK_DELTA ”  mask = “ 11111111b ” > 5A </ 函数 >
+			</ group >
+		</ 代码 >
+		< 代码 说明 = “镜面倾斜角80 ” >
+			< 组 ID = “ 3110 ” >
+				< function  start = “ 1 ”  end = “ 1 ”  comment = “ ASP_BORDSTEINAUTOMATIK_DELTA ”  mask = “ 11111111b ” > 50 </ function >
+			</ group >
+		</ 代码 >
+		< 代码 描述 = “镜面倾斜角70 ” >
+			< 组 ID = “ 3110 ” >
+				< 函数 开始 = “ 1 ” 结束 = “ 1 ” 注释 = “ ASP_BORDSTEINAUTOMATIK_DELTA ”  mask = “ 11111111b ” > 46 </ 函数 >
+			</ group >
+		</ 代码 >
+		< 代码 说明 = “镜面倾斜角59 ” >
+			< 组 ID = “ 3110 ” >
+				< 函数 开始 = “ 1 ” 结束 = “ 1 ” 注释 = “ ASP_BORDSTEINAUTOMATIK_DELTA ”  mask = “ 11111111b ” > 3B </ 函数 >
+			</ group >
+		</ 代码 >
+		< 代码 说明 = “将启动模式更改为自适应” >
+			< 组 ID = “ 3221 ” >
+				< function  start = “ 7 ”  end = “ 7 ”  comment = “ FesPiaDefaultLastUserMode ”  mask = “ 11111111b ” > 0A </ function >
+			</ group >
+		</ 代码 >
+		< 代码 描述 = “将启动模式更改为Sport ” >
+			< 组 ID = “ 3221 ” >
+				< function  start = “ 7 ”  end = “ 7 ”  comment = “ FesPiaDefaultLastUserMode ”  mask = “ 11111111b ” > 01 </ function >
+			</ group >
+		</ 代码 >
+		< 代码 说明 = “将启动模式更改为运动个人” >
+			< 组 ID = “ 3221 ” >
+				< 函数 开始 = “ 7 ” 结束 = “ 7 ” 注释 = “ FesPiaDefaultLastUserMode ”  mask = “ 11111111b ” > 03 </ 函数 >
+			</ group >
+		</ 代码 >
+		< 代码 说明 = “将启动模式更改为Comfort（默认）” >
+			< 组 ID = “ 3221 ” >
+				< 函数 开始 = “ 7 ” 结束 = “ 7 ” 注释 = “ FesPiaDefaultLastUserMode ”  mask = “ 11111111b ” > 04 </ 函数 >
+			</ group >
+		</ 代码 >
+		< 代码 说明 = “将启动模式更改为Eco Pro ” >
+			< 组 ID = “ 3221 ” >
+				< 函数 开始 = “ 7 ” 结束 = “ 7 ” 注释 = “ FesPiaDefaultLastUserMode ”  mask = “ 11111111b ” > 07 </ 函数 >
+			</ group >
+		</ 代码 >
+		< 代码 说明 = “将启动模式更改为Eco Pro个人” >
+			< 组 ID = “ 3221 ” >
+				< 函数 开始 = “ 7 ” 结束 = “ 7 ” 注释 = “ FesPiaDefaultLastUserMode ”  mask = “ 11111111b ” > 09 </ 函数 >
+			</ group >
+		</ 代码 >
+		< 代码 说明 = “ [1/2]启用Sport Plus模式” >
+			< 组 ID = “ 3221 ” >
+				< 函数 开始 = “ 9 ” 结束 = “ 9 ” 注释 = “ FesSportWorldMode1 ”  mask = “ 11111111b ” > 02 </ 函数 >
+			</ group >
+		</ 代码 >
+		< 代码 说明 = “ [1/2]启用Comfort Plus模式” >
+			< 组 ID = “ 3221 ” >
+				< 函数 开始 = “ 12 ” 结束 = “ 12 ” 注释 = “ FesComfortWorldMode1 ”  mask = “ 11111111b ” > 05 </ 函数 >
+			</ group >
+		</ 代码 >
+		< 代码 说明 = “ [WIP] [1/3]启用自动车道变更助手” >
+			< 组 ID = “ 3420 ” >
+				< 函数 开始 = “ 10 ” 结束 = “ 10 ” 注释 = “ SPURWECHSEL_ASSISTENT ”  mask = “ 00000011b ” > 01 </ 函数 >
+			</ group >
+		</ 代码 >
+		< 代码 说明 = “在Eco Pro个人版中启用Comfort Plus模式选项” >
+			< 组 ID = “ 3221 ” >
+				<！- function start =“ 7” end =“ 7” comment =“ FesPiaDefaultLastUserMode” mask =“ 11111111b”> 09 </ function- >
+				< 函数 开始 = “ 5 ” 结束 = “ 5 ” 注释 = “ FesPiaDefaultEcoWorldMode ”  mask = “ 11111111b ” > 09 </ 函数 >
+				< 函数 开始 = “ 12 ” 结束 = “ 12 ” 注释 = “ FesComfortWorldMode1 ”  mask = “ 11111111b ” > 05 </ 函数 >
+				< function  start = “ 4 ”  end = “ 4 ”  comment = “ FesPiaDefaultComfortWorldMode ”  mask = “ 11111111b ” > 05 </ function >
+			</ group >
+		</ 代码 >
+	</ cafd >
+	< cafd  id = “ 00002742 ” 名称 = “ DME_BAC2 ” 作者 = “ jokinawa ” 系列 = “ S18A ” >
+		<！-组3020 BSU_BEREICH- >
+		< 代码 说明 = “ [诊断]启用自动启动停止存储” >
+			< 组 ID = “ 3020 ” >
+				< function  start = “ 19 ”  end = “ 19 ”  comment = “ TCM_MSA_MEMORY ”  mask = “ 00000010b ” > 01 </ function >
+			</ group >
+		</ 代码 >
+	</ cafd >
+	< cafd  id = “ 00004508 ” 名称 = “ DKOMBI4 ” 作者 = “ jokinawa ” 系列 = “ S18A ” >
+		<！-组3000 Anzeige Konfiguration- >
+		< 代码 说明 = “在短跑中禁用安全带状态” >
+			< 组 ID = “ 3000 ” >
+				< function  start = “ 3 ”  end = “ 3 ”  comment = “ FOND_GURTSTATUS_ENABLE ”  mask = “ 00000111b ” >无效</ function >
+			</ group >
+		</ 代码 >
+		< 代码 说明 = “ [航行]在舒适模式下启用航行（可选）” >
+			< 组 ID = “ 3000 ” >
+				< 函数 开始 = “ 15 ” 结束 = “ 15 ” 注释 = “ SEGELN_IN_COMFORT_MODUS（可选）”  mask = “ 00001000b ” > 01 </ 函数 >
+			</ group >
+		</ 代码 >
+		< 代码 说明 = “禁用车速表校正” >
+			< 组 ID = “ 3000 ” >
+				< function  start = “ 1 ”  end = “ 1 ”  comment = “ BC_V_KORREKTUR ”  mask = “ 01000000b ” > ohne_korrektur </ function >
+			</ group >
+		</ 代码 >
+		< 代码 描述 = “将短划线布局和徽标更改为BMW M ” >
+			< 组 ID = “ 3001 ” >
+				< function  start = “ 18 ”  end = “ 18 ”  comment = “ LOGO_SCHRIFTZUG ”  mask = “ 11111111b ” > m_logo </ function >
+			</ group >
+			< 组 ID = “ 3000 ” >
+				< 函数 开始 = “ 53 ” 结束 = “ 53 ” 注释 = “ GLOBAL_LAYOUT_VARIANTE ”  mask = “ 11110000b ” > m_gmbh </ 函数 >
+			</ group >
+		</ 代码 >
+		< 代码 说明 = “更改无徽标的Dash布局BMW M ” >
+			< 组 ID = “ 3001 ” >
+				< function  start = “ 18 ”  end = “ 18 ”  comment = “ LOGO_SCHRIFTZUG ”  mask = “ 11111111b ” > kein_logo </ function >
+			</ group >
+			< 组 ID = “ 3000 ” >
+				< 函数 开始 = “ 53 ” 结束 = “ 53 ” 注释 = “ GLOBAL_LAYOUT_VARIANTE ”  mask = “ 11110000b ” > m_gmbh </ 函数 >
+			</ group >
+		</ 代码 >
+		< 代码 说明 = “将仪表板布局和徽标更改为Alpina [req i-step 2019 / 07.xx +] ” >
+			< 组 ID = “ 3001 ” >
+				< function  start = “ 18 ”  end = “ 18 ”  comment = “ LOGO_SCHRIFTZUG ”  mask = “ 11111111b ” > alpina </ function >
+			</ group >
+			< 组 ID = “ 3000 ” >
+				< 函数 开始 = “ 53 ” 结束 = “ 53 ” 注释 = “ GLOBAL_LAYOUT_VARIANTE ”  mask = “ 11110000b ” > alpina </ 函数 >
+			</ group >
+		</ 代码 >
+		< 代码 说明 = “将短划线布局更改为无徽标的Alpina [req i-step 2019 / 07.xx +] ” >
+			< 组 ID = “ 3001 ” >
+				< function  start = “ 18 ”  end = “ 18 ”  comment = “ LOGO_SCHRIFTZUG ”  mask = “ 11111111b ” > kein_logo </ function >
+			</ group >
+			< 组 ID = “ 3000 ” >
+				< 函数 开始 = “ 53 ” 结束 = “ 53 ” 注释 = “ GLOBAL_LAYOUT_VARIANTE ”  mask = “ 11110000b ” > alpina </ 函数 >
+			</ group >
+		</ 代码 >
+		< 代码 说明 = “启用辅助驾驶员视图[req 2019 / 07.xx +] ” >
+			< 组 ID = “ 3000 ” >
+				< 函数 开始 = “ 97 ” 结束 = “ 97 ” 注释 = “ SICHT_ABSICHT_ENABLE ”  mask = “ 00100000b ” > 01 </ 函数 >
+				< 函数 开始 = “ 112 ” 结束 = “ 112 ” 注释 = “ CB_FZG_UMGEBUNG_FAS ” 掩码 = “ 00100000b ” > 01 </ 函数 >
+				< 函数 开始 = “ 112 ” 结束 = “ 112 ” 注释 = “ CB_PRESELECT_NAVI_ANSICHT_FZG_UMGEBUNG ”  mask = “ 01000000b ” > 01 </ 函数 >
+			</ group >
+			< 组 ID = “ 3007 ” >
+				< function  start = “ 29 ”  end = “ 29 ”  comment = “ PIA_FZG_UMGEBUNG_FAS ”  mask = “ 00000001b ” > 01 </ function >
+			</ group >
+		</ 代码 >
+	</ cafd >
+	< cafd  id = “ 00003E52 ” 名称 = “ HU_MGU ” 作者 = “ jokinawa ” 系列 = “ S18A ” >
+		<！- 300A SARAH组->
+		< 代码 说明 = “禁用夜视法律免责声明” >
+			< 组 ID = “ 300A ” >
+				< function  start = “ 12 ”  end = “ 12 ”  comment = “ werte = 00 ”  mask = “ 11111111b ” > kein_ld </ function >
+			</ group >
+		</ 代码 >
+		<！-组300B PARKEN- >
+		< 代码 说明 = “禁用相机法律免责声明” >
+			< 组 ID = “ 300B ” >
+				< 函数 开始 = “ 1 ” 结束 = “ 1 ” 注释 = “ MACRO_CAM_LEGALDISCLAIMER ”  mask = “ 11111111b ” > kein_ld </ 函数 >
+			</ group >
+		</ 代码 >
+		<！-组3000 HMI_SPEECH- >
+		< 代码 描述 = “ HUD距离信息” >
+			< 组 ID = “ 3000 ” >
+				< function  start = “ 29 ”  end = “ 29 ”  comment = “ HUD_DISTANCE_INFO ”  mask = “ 00000001b ” > aktiv </ function >
+			</ group >
+		</ 代码 >
+		< 代码 说明 = “禁用法律免责声明时间” >
+			< 组 ID = “ 3000 ” >
+				< 函数 开始 = “ 3 ” 结束 = “ 3 ” 注释 = “ LEGAL_DISCLAIMER_TIME ”  mask = “ 11111111b ” > kein_ld </ 函数 >
+			</ group >
+		</ 代码 >
+		< 代码 说明 = “ [1/2]启用运动视频-必须进行物理按钮组合才能在编码后启用。请参阅Bimmerpost G07论坛中的注释。” >
+		<！ -https://g07.bimmerpost.com/forums/showpost.php?p=25076780&postcount=11- >
+			< 组 ID = “ 3000 ” >
+				< function  start = “ 53 ”  end = “ 53 ”  comment = “ VIDEO_SPEEDLOCK_CONDITION ”  mask = “ 00000111b ” >无</ function >
+				< function  start = “ 49 ”  end = “ 49 ”  comment = “ SPEEDLOCK_FREISCHALTMENU ”  mask = “ 10000000b ” > aktiv </ function >
+				< 函数 开始 = “ 40 ” 结束 = “ 40 ” 注释 = “ SPEEDLOCK_SPEEDVALUE_MIN ”  mask = “ 00011111b ” > nicht_aktiv </ 函数 >
+				< 函数 开始 = “ 39 ” 结束 = “ 39 ” 注释 = “ SPEEDLOCK_SPEEDVALUE_MAX ”  mask = “ 00111111b ” > nicht_aktiv </ 函数 >
+			</ group >
+		</ 代码 >
+		<！-组3006- >
+		< 代码 说明 = “ [2/2]启用运动视频-必须进行物理按钮组合才能在编码后启用。请参阅Bimmerpost G07论坛中的注释。” >
+		<！ -https://g07.bimmerpost.com/forums/showpost.php?p=25076780&postcount=11- >
+			< 组 ID = “ 3006 ” >
+				< 函数 开始 = “ 14 ” 结束 = “ 14 ” 注释 = “ SPEEDLOCK_X_KMH_MIN ”  mask = “ 11111111b ” > nicht_aktiv </ 函数 >
+				< 函数 开始 = “ 13 ” 结束 = “ 13 ” 注释 = “ SPEEDLOCK_X_KMH_MAX ”  mask = “ 11111111b ” > nicht_aktiv </ 函数 >
+			</ group >
+		</ 代码 >
+		< 代码 说明 = “在“外部照明”设置中启用5单击闪烁器选项” >
+			< 组 ID = “ 3000 ” >
+				< function  start = “ 0 ”  end = “ 0 ”  comment = “ 5_FACH_TIPPBLINKEN ”  mask = “ 00000100b ” > aktiv </ function >
+			</ group >
+		</ 代码 >
+		< 代码 描述 = “将启动标志更改为BMW M ” >
+			< 组 ID = “ 3000 ” >
+				< function  start = “ 11 ”  end = “ 11 ”  comment = “ STARTUP_EMBLEM ”  mask = “ 00011110b ” > bmw_m </ function >
+			</ group >
+		</ 代码 >
+		< 代码 描述 = “将启动标志更改为劳斯莱斯” >
+			< 组 ID = “ 3000 ” >
+				< function  start = “ 11 ”  end = “ 11 ”  comment = “ STARTUP_EMBLEM ”  mask = “ 00011110b ” > rr </ function >
+			</ group >
+		</ 代码 >
+		< 代码 描述 = “将启动徽标更改为Alpina ” >
+			< 组 ID = “ 3000 ” >
+				< function  start = “ 11 ”  end = “ 11 ”  comment = “ STARTUP_EMBLEM ”  mask = “ 00011110b ” > alpina </ function >
+			</ group >
+		</ 代码 >
+		< 代码 描述 = “将启动标志更改为宝马” >
+			< 组 ID = “ 3000 ” >
+				< function  start = “ 11 ”  end = “ 11 ”  comment = “ STARTUP_EMBLEM ”  mask = “ 00011110b ” >宝马</ function >
+			</ group >
+		</ 代码 >
+		< 代码 描述 = “将启动标志更改为BMWi ” >
+			< 组 ID = “ 3000 ” >
+				< 函数 开始 = “ 11 ” 结束 = “ 11 ” 注释 = “ STARTUP_EMBLEM ” 掩码 = “ 00011110b ” > bmw_i </ 函数 >
+			</ group >
+		</ 代码 >
+		< 代码 说明 = “启用轮胎温度和压力显示” >
+			< 组 ID = “ 3000 ” >
+				< function  start = “ 20 ”  end = “ 20 ”  comment = “ RDC_DRUCK_TEMP ”  mask = “ 00000011b ” > druck_und_temperatur </ function >
+			</ group >
+		</ 代码 >
+		<！-组3002- >
+		< 代码 说明 = “将播放的声音信号设置为BMW [在i-Step 2019.03.xx上不起作用] ” >
+			< 组 ID = “ 3002 ” >
+				< function  start = “ 2 ”  end = “ 2 ”  comment = “ BRAND ”  mask = “ 01110000b ” >宝马</ function >
+			</ group >
+		</ 代码 >
+		< 代码 描述 = “将已播放的声音信号设置为迷你[在i-Step 2019.03.xx上不起作用] ” >
+			< 组 ID = “ 3002 ” >
+				< function  start = “ 2 ”  end = “ 2 ”  comment = “ BRAND ”  mask = “ 01110000b ” > mini </ function >
+			</ group >
+		</ 代码 >
+		< 代码 说明 = “将播放的声音信号设置为BMWi [在i-Step 2019.03.xx上不起作用] ” >
+			< 组 ID = “ 3002 ” >
+				< function  start = “ 2 ”  end = “ 2 ”  comment = “ BRAND ”  mask = “ 01110000b ” > bmw_i </ function >
+			</ group >
+		</ 代码 >
+		< 代码 说明 = “将播放的声音信号更改为劳斯莱斯[不适用于i-Step 2019.03.xx] ” >
+			< 组 ID = “ 3002 ” >
+				< function  start = “ 2 ”  end = “ 2 ”  comment = “ BRAND ”  mask = “ 01110000b ” > rolls_royce </ function >
+			</ group >
+		</ 代码 >
+		< 代码 说明 = “禁用卷弹出显示” >
+			< 组 ID = “ 3002 ” >
+				< function  start = “ 0 ”  end = “ 0 ”  comment = “ VOLUME_POPUP_DISPLAY ”  mask = “ 10000000b ” > nicht_aktiv </ function >
+			</ group >
+		</ 代码 >
+		< 代码 说明 = “将最大保留量更改为50％” >
+			< 组 ID = “ 3002 ” >
+				< function  start = “ 1 ”  end = “ 1 ”  comment = “ VOLUME_MAX_ON ”  mask = “ 11111111b ” > 32 </ function >
+			</ group >
+		</ 代码 >
+		<！-组3008- >
+		< 代码 说明 = “ [2/2]启用Sport Plus菜单选项” >
+			< 组 ID = “ 3008 ” >
+				< 函数 开始 = “ 0 ” 结束 = “ 0 ” 注释 = “ FES_SPORT_EXPERT ”  mask = “ 00000100b ” > 01 </ 函数 >
+			</ group >
+		</ 代码 >
+		< 代码 说明 = “ [2/2]启用Comfort Plus菜单选项” >
+			< 组 ID = “ 3008 ” >
+				< function  start = “ 0 ”  end = “ 0 ”  comment = “ FES_COMFORT_PLUS ”  mask = “ 00100000b ” > 01 </ function >
+				< function  start = “ 3 ”  end = “ 3 ”  comment = “ ECO_CONF_ATTENUATION_COMFPLUS ”  mask = “ 00100000b ” > 01 </ function >
+				< function  start = “ 3 ”  end = “ 3 ”  comment = “ ECO_CONF_STEERING_COMFPLUS ”  mask = “ 01000000b ” > 01 </ function >
+			</ group >
+		</ 代码 >
+		< 代码 说明 = “ [SAIL]在Eco Pro中启用航行模式” >
+			< 组 ID = “ 3008 ” >
+				< 函数 开始 = “ 4 ” 结束 = “ 4 ” 注释 = “ GLOBAL_CONF_SAILING ”  mask = “ 00000100b ” > 01 </ 函数 >
+				< function  start = “ 4 ”  end = “ 4 ”  comment = “ EFF_DYN_SAILING ”  mask = “ 00010000b ” > 01 </ function >
+			</ group >
+			< 组 ID = “ 3009 ” >
+				< function  start = “ 1 ”  end = “ 1 ”  comment = “ SAILING_COUNTER ”  mask = “ 00000010b ” > 01 </ function >
+			</ group >
+		</ 代码 >
+		< 代码 说明 = “ [WIP] [2/3]启用自动车道变更助手” >
+			< 组 ID = “ 300A ” >
+				< 函数 开始 = “ 11 ” 结束 = “ 11 ” 注释 = “ SPURWECHSELASSISTENT ”“  mask = ” 00000001b “ > 01 </ 函数 >
+			</ group >
+		</ 代码 >
+	</ cafd >
+	< cafd  id = “ 00001D92 ” 名称 = “ FZD2 ” 作者 = “ jokinawa ” 系列 = “ S18A ” >
+		<！- 3002 DWA组->
+		< 代码 说明 = “禁用OBD2警报” >
+			< 组 ID = “ 3002 ” >
+				< function  start = “ 6 ”  end = “ 6 ”  comment = “ OBD_Alarm ”  mask = “ 00001000b ” > 00 </ function >
+			</ group >
+		</ 代码 >
+	</ cafd >
+	< cafd  id = “ 000055D7 ” 名称 = “ HKFM2 ” 作者 = “ jokinawa ” 系列 = “ S18A ” >
+		< 代码 说明 = “通过钥匙扣或开关启用尾门关闭（无保持）” >
+            < 组 ID = “ 300B ” >
+                < 函数 开始 = “ 1 ” 结束 = “ 1 ” 注释 = “ HKL_REMOTECONTROLLIFTGATEBUTTON_BUTTON_TYPE ”  mask = “ 11111111b ” > 05 </ 函数 >
+            </ group >
+            < 组 ID = “ 3008 ” >
+                < function  start = “ 1 ”  end = “ 1 ”  comment = “ HKL_ROCKERSWITCHPOS1_BUTTON_TYPE ”  mask = “ 11111111b ” > 05 </ function >
+            </ group >
+        </ 代码 >
+	</ cafd >
+	< CAFD  ID = “ 000042C1 ” 名称 = “ SAS2 ” 作者 = “ jokinawa ” 系列 = “ S18A ” >
+		< 代码 说明 = “ [WIP] [3/3]启用自动车道变更助手” >
+            < 组 ID = “ 3000 ” >
+                < function  start = “ 137 ”  end = “ 137 ”  comment = “ C_SWA_VORHANDEN ”  mask = “ 11111111b ” > 01 </ function >
+            </ group >
+        </ 代码 >
+	</ cafd >
+</ FDL >
